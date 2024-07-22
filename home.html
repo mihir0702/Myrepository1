@@ -1,0 +1,61 @@
+<!-- HTML Code for Managing Student Attendance -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Attendance Management</title>
+  <style>
+    /* Add some basic styling to make the table look better */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Attendance Management</h1>
+  <form>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="class">Class:</label>
+    <select id="class" name="class">
+      <option value="Class 1">Class 1</option>
+      <option value="Class 2">Class 2</option>
+      <option value="Class 3">Class 3</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+    <table id="attendance-table">
+      <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Attendance</th>
+      </tr>
+      <!-- Add rows for each student -->
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>
+          <input type="radio" name="attendance-1" value="present"> Present
+          <input type="radio" name="attendance-1" value="absent"> Absent
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Doe</td>
+        <td>
+          <input type="radio" name="attendance-2" value="present"> Present
+          <input type="radio" name="attendance-2" value="absent"> Absent
+        </td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </table>
+    <br>
+    <input type="submit" value="Save Attendance">
+  </form>
+</body>
+</html>
